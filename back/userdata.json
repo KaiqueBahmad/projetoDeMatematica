@@ -1,0 +1,24 @@
+{
+    "balance": 0.0,
+    "recipes": {
+        "Torta de Morango": {
+            "morango": 250,
+            "leite": 550,
+            "açucar": 50,
+            "farinha": 250
+        },
+        "Torta de Limão": {
+            "limão": 250,
+            "leite": 550,
+            "açucar": 50,
+            "farinha": 250
+        }
+    },
+    "market": {
+        "limão":0.1,
+        "farinha":0.4,
+        "açucar":0.8,
+        "leite":1.5,
+        "morango":2.0
+    }
+}
