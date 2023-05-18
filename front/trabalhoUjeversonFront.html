@@ -15,12 +15,49 @@
 <body>
 
     
-    <div class="formPopup" id="addRecipe">
-        <form action="/adicionarReceita" class="formContainer">
-            <h2>Adicionar Receita</h2>
+    <div class="recipePopup" id="addRecipe" >
+        
+        <form action="#" class="formContainer">
+            <h2>Adicionar Receita</h2> 
             <label for="recipeName"><b>Nome</b></label>
-            <input type="text" placeholder="Nome da Receita" name="recipeName" required>
+            <input id="recipeNameInput" type="text" placeholder="Nome da Receita" name="recipeName" required>
+            
+           <label for="recipeDescr">Descrição</label>
+            <input id="recipeDesc" type="text" name="recipeDescr" placeholder="SEXO" >
+
+            <div id="buttons">
+                <button class="buttons" onclick="closeRecipe()">X</button>
+                <button class="buttons">Enviar</button>
+            </div>
         </form>
+
+
+    </div>
+
+    <div class="marketPopup" id="market" >
+        
+        <div action="#" class="marketContainer">
+            <table id="marketTable">
+                <thead id="tableHead">
+                    <tr>
+                      <th class="productName">Nome</th>
+                      <th class="productQuantity">Quantidade</th>
+                      <th class="productPrice">Preço</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr class="products">
+                        <td class="productName">Leite</td>
+                        <td class="productQuantity"><input type="number"></td>
+                        <td class="productPrice"><input type="number"></td>
+                    </tr>
+                    
+                  </tbody>
+
+            </table>
+        </div>
+
+        
 
 
     </div>
@@ -29,13 +66,13 @@
 
     <section>
         <header class="headerTop">
-            <img src="placeholder2.png" class="itemsTop"></img>
+            <B src="placeholder2.png" class="itemsTop"></img>
             <p class="itemsTop">Receitas 2000</p>
         </header>
         <header class="headerTab">
 
             <button onclick="openRecipe()">Adicionar Receita</button>
-            <button>Mercado</button>
+            <button onclick="openMarket()">Mercado</button>
 
         </header>
     </section>
@@ -48,10 +85,11 @@
 
     <section id="toolBar">
         <h2>Receitas</h2>
-        <!-- <button id="tagFilter" type="menu"> Filtro</button>
-    <input type="search"> -->
+      
 
     </section>
+
+
     <div id="recipeTab_1">
 
         <div class="imagesDiv">
@@ -69,6 +107,15 @@
             function closeRecipe() {
                 document.getElementById("addRecipe").style.display = "none";
             }
+
+            function openMarket() {
+                document.getElementById("market").style.display = "flex";
+            }
+
+            function closeMarket() {
+                document.getElementById("market").style.display = "none";
+            }
+
 
         </script>
 
