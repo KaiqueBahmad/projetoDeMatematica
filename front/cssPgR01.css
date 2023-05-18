@@ -10,6 +10,11 @@
      padding: 0;
      margin: 0;
      border: 0;
+     color:aliceblue;
+     
+    }
+    body{
+        background-color: #00000d;
     }
 
  /*Começo do Style da Tab principal*/
@@ -31,7 +36,7 @@
  .headerTab>header>button {
      display: flex;
      justify-content: space-around;
-     background-color: greenyellow;
+     
      
 
  }
@@ -96,14 +101,14 @@
     outline: none;
     background-color: rgba(0, 0, 0, 0.3);
 }
-#recipeDesc{
+.ingredient{
     color: aliceblue;
     max-width: 100%;
     resize: vertical;
     background-color: #0C0B3C;
     border-bottom: solid rgba(0, 0, 0, 0.3);
     resize: vertical;
-    padding: 10px;     
+    padding: 5px;     
 
 }
 #buttons{
@@ -180,10 +185,10 @@
 
  /* Começo Style do header */
  .headerTop {
-     margin: 0;
+     margin: 1% 0 0 0;
      border: 0;
      justify-content: space-between;
-     background-color: white;
+     
      width: 100%;
      height: 80px;
      display: flex;
@@ -197,7 +202,7 @@
      font-size: x-large;
      margin-right: 5vh;
      
-     max-height: 100%;
+     
      
  }
 
@@ -238,3 +243,6 @@
      
 
  }
+#toolBar{
+    padding: 0 5% 0 5%;
+}
