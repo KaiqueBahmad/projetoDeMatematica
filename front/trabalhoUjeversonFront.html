@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="cssPgR01.css" media="screen" />
+</head>
+
+<body>
+
+    
+    <div class="formPopup" id="addRecipe">
+        <form action="/adicionarReceita" class="formContainer">
+            <h2>Adicionar Receita</h2>
+            <label for="recipeName"><b>Nome</b></label>
+            <input type="text" placeholder="Nome da Receita" name="recipeName" required>
+        </form>
+
+
+    </div>
+
+
+
+    <section>
+        <header class="headerTop">
+            <img src="placeholder2.png" class="itemsTop"></img>
+            <p class="itemsTop">Receitas 2000</p>
+        </header>
+        <header class="headerTab">
+
+            <button onclick="openRecipe()">Adicionar Receita</button>
+            <button>Mercado</button>
+
+        </header>
+    </section>
+    
+
+
+
+
+
+
+    <section id="toolBar">
+        <h2>Receitas</h2>
+        <!-- <button id="tagFilter" type="menu"> Filtro</button>
+    <input type="search"> -->
+
+    </section>
+    <div id="recipeTab_1">
+
+        <div class="imagesDiv">
+            <img class="recipeImages" src="placeholder.jpg" alt="imagem-de-comida">
+        </div>
+        <div class="imagesDiv">
+            <img class="recipeImages" src="placeholder2.png" alt="imagem-de-comida">
+        </div>
+
+        <script>
+            function openRecipe() {
+                document.getElementById("addRecipe").style.display = "flex";
+            }
+
+            function closeRecipe() {
+                document.getElementById("addRecipe").style.display = "none";
+            }
+
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+ /*Paleta de cor com uma descrição geral de cada cor
+            #FF8FB8 - base da pagina
+            #FFDBE8 - tonalidade mais clara uso pra letras
+            #9C5770
+            #C299A8
+            #ED85AB
+            */
+ * {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     padding: 0;
+     margin: 0;
+     border: 0;
+    }
+
+ /*Começo do Style da Tab principal*/
+ .headerTab {
+     width: 100%;
+     height: 50px;
+    
+    
+     margin: 0;
+     padding: 0;
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     display: flex;
+     justify-content: center;
+    
+
+ }
+
+ .headerTab>header>button {
+     display: flex;
+     justify-content: space-around;
+     background-color: greenyellow;
+     
+
+ }
+
+
+ header>button {
+     color: aliceblue;
+     width: 45%;
+     height: 100%;
+     margin: 0;
+     font-size: medium;
+     
+     border: solid #0C0B3C;
+     border: 0;
+     padding-left: 15px;
+     justify-content: flex-start;
+     display: flex;
+     align-items: center;
+     background-color: #0E0D4A;
+     text-decoration: solid;
+
+ }
+
+ header>button:hover {
+     background-color: #0A0933;
+     cursor: pointer;
+ }
+ /*Começo Style popups*/
+.formPopup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    
+    
+}
+.formContainer {
+    color: aliceblue;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    background-color: #0A0933;
+    border-radius: 1%;
+  }
+
+
+
+ /* Começo Style do header */
+ .headerTop {
+     margin: 0;
+     border: 0;
+     justify-content: space-between;
+     background-color: white;
+     width: 100%;
+     height: 80px;
+     display: flex;
+     align-items: center;
+     
+ }
+
+ .itemsTop {
+     margin-left: 5vh;
+     
+     font-size: x-large;
+     margin-right: 5vh;
+     
+     max-height: 100%;
+     
+ }
+ 
+
+
+
+ /*Começo Style tab de receitas*/
+ #recipeTab_1 {
+     width: 100%;
+    
+    
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 0;
+
+     gap: 20px;
+     
+     
+
+ }
+
+ .imagesDiv {
+     border: 0;
+     scroll-snap-align: center;
+     
+     padding: 0;
+     
+     align-items: center;
+     display: flex;
+     background-color: #0A0933;
+ }
+
+ .recipeImages {
+     width: 200px;
+     
+     
+
+ }
